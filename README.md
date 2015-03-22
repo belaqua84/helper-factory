@@ -1,12 +1,13 @@
 # helper-factory
 A factory written in AngularJS that replaces some of the most useful functions of jquery with pure javascript.  
 
-So far it includes 6 functions:
+So far it includes 7 functions:
 
 - hasClass
 - addClass
 - removeClass
 - forEachNode
+- objectLength
 - debounce
 - whichBrowser
 
@@ -48,6 +49,20 @@ var myArray = [];
 helperFactory.forEachNode(nodeList, function(index, value){
   myArray.push(value);
 });
+```
+
+###objectLength
+
+`helperFactory.objectLength(object);`
+
+Returns the number of (root level) properties in the object.
+
+example:
+
+```
+if(helperFactory.objectLength(scope.myObject) === helperFactory.objectLength(ajaxObject)){
+//Do something
+}
 ```
 
 ###debounce
