@@ -11,6 +11,9 @@ So far it includes 7 functions:
 - debounce
 - whichBrowser
 
+I should mention that the new(ish) classList API for javascript replaces hasClass, addClass, and removeClass...unless you have to support IE9 or older.  Which I do.  A lot.
+
+
 ##Usage
 
 First, bring the script into your index page:
@@ -39,7 +42,7 @@ To use any of the functions within helperFactory, invoke them thusly:
 
 `helperFactory.forEachNode(nodeList, function(index, value){...});`
 
-Typically used in conjunction with `document.querySelectorAll(selector);` which returns a node list, the prototype of which does not include a forEach function.  This forEachNode function iterates through the nodelist and returns the content of each node, which could then, for example, be added to an array which is easier to interact with and has more options.
+Typically used in conjunction with `document.querySelectorAll(selector);` which returns a node list, the prototype of which does not include a forEach function.  This forEachNode function iterates through the nodelist and returns the content of each node, which could then for example, be added to an array which is easier to interact with and has more options.
 
 example:
 
