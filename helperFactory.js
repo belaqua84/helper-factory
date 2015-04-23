@@ -4,37 +4,6 @@
 
 	angular.module('yourApp').factory('helperFactory', function(){
         return {
-            hasClass: function(elem, selector){
-                var className = " " + selector + " ";
-                var cleanClass = /[\n\t\r]/g;
-                if ((" " + elem.className + " ").replace(cleanClass, " ").indexOf(className) > -1) {
-                    return true;
-                }
-
-                return false;
-            },
-            addClass: function(elem, addClass){
-                var classArray = (elem.className).split(' ');
-                var classAlreadyExists = false;
-                classArray.forEach(function(currentClass){
-                    if(currentClass === addClass){
-                        classAlreadyExists = true;
-                    }
-                });
-                if(classAlreadyExists === false){
-                    elem.className += ' ' + addClass;
-                }
-            },
-            removeClass: function(elem, removeClass){
-                var classArray = (elem.className).split(' ');
-                var removedClassList = '';
-                classArray.forEach(function(currentClass){
-                    if(currentClass !== removeClass){
-                        removedClassList += ' ' + currentClass;
-                    }
-                });
-                elem.className = removedClassList.replace(/^\s+|\s+$/g,''); //trim trailing and leading white space
-            },
             debounce: function(func, wait, immediate){              // Returns a function that as long as it continues to be invoked, will not
                 var timeout;                                        // be triggered. The function will be called after it stops being invoked for
                 return function() {                                 // N milliseconds. If `immediate` is passed, trigger the function on the

@@ -1,11 +1,8 @@
 # helper-factory
 A factory written in AngularJS that replaces some of the most useful functions of jquery with pure javascript.  
 
-So far it includes 7 functions:
+So far it includes 4 functions:
 
-- hasClass
-- addClass
-- removeClass
 - forEachNode
 - objectLength
 - debounce
@@ -25,18 +22,6 @@ Then Dependency Inject helperFactory into any controller or directive or whereve
 `myApp.controller('HelloWorldController', ['$scope', 'helperFactory', function($scope, helperFactory) {...}]);`
 
 To use any of the functions within helperFactory, invoke them thusly:
-
-###hasClass
-
-`helperFactory.hasClass(elem, 'classname'); //returns true/false`
-
-###addClass
-
-`helperFactory.addClass(elem, 'classname'); //adds class name if it is not already present`
-
-###removeClass
-
-`helperFactory.removeClass(elem, 'classname'); //removes class name if present`
 
 ###forEachNode
 
