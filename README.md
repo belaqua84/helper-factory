@@ -1,5 +1,5 @@
 # helper-factory
-A factory written in AngularJS that replaces some of the most useful functions of jquery with pure javascript.  
+Some helpers that make it easier to use pure javascript
 
 So far it includes 4 functions:
 
