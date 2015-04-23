@@ -8,8 +8,6 @@ So far it includes 4 functions:
 - debounce
 - whichBrowser
 
-I should mention that the new(ish) classList API for javascript replaces hasClass, addClass, and removeClass...unless you have to support IE9 or older.  Which I do.  A lot.
-
 
 ##Usage
 
