@@ -1,7 +1,7 @@
 # helper-factory
 An AngularJS factory with some helpers that make it easier to use pure javascript
 
-So far it includes 4 functions:
+Includes 4 functions:
 
 - forEachNode
 - objectLength
